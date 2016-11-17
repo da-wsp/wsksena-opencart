@@ -5,10 +5,11 @@
 <!--  <br />-->
     <?php foreach ($languages as $language) { ?>
     <button class="lang-bt" onclick="$('input[name=\'language_code\']').attr('value', '<?php echo $language['code']; ?>'); $(this).parent().parent().submit();">
-        <?php if ($language['name'] == "Русский") {echo "Ru";} ?>
-        <?php if ($language['name'] == "English") {echo "En";} ?>
-        <?php if ($language['name'] == "Deutsch") {echo "De";} ?>
         <?php if ($language['name'] == "Українська") {echo "Ua";} ?>
+        <?php if ($language['name'] == "Русский") {echo "Ru";} ?>
+        <?php if ($language['name'] == "Deutsch") {echo "De";} ?>
+        <?php if ($language['name'] == "English") {echo "En";} ?>
+        <?php if ($language['name'] == "Romana") {echo "Ro";} ?>
     </button>
 <!--
     <img src="image/flags/<?php echo $language['image']; ?>"

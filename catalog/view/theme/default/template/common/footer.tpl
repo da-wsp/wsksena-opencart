@@ -98,36 +98,42 @@ Please donate via PayPal to donate@opencart.com
             <?php if ($lang == "ru") {echo "Главная";} ?>
             <?php if ($lang == "de") {echo "Startseite";} ?>
             <?php if ($lang == "uk") {echo "Головна";} ?>
+            <?php if ($lang == "ro") {echo "Principal";} ?>
         </li></a>
         <a href="index.php?route=product/category&path=59"><li>
             <?php if ($lang == "en") {echo "Collection";} ?>
             <?php if ($lang == "ru") {echo "Коллекция";} ?>
             <?php if ($lang == "de") {echo "Sammlung";} ?>
             <?php if ($lang == "uk") {echo "Колекція";} ?>
+            <?php if ($lang == "ro") {echo "Colectie";} ?>
         </li></a>
         <a href="index.php?route=information/information&amp;information_id=4"><li>
             <?php if ($lang == "en") {echo "About us";} ?>
             <?php if ($lang == "ru") {echo "О нас";} ?>
             <?php if ($lang == "de") {echo "Uber uns";} ?>
             <?php if ($lang == "uk") {echo "Про нас";} ?>
+            <?php if ($lang == "ro") {echo "Despre noi";} ?>
         </li></a>
         <a href="index.php?route=information/contact"><li>
             <?php if ($lang == "en") {echo "Contacts";} ?>
             <?php if ($lang == "ru") {echo "Контакты";} ?>
             <?php if ($lang == "de") {echo "Kontakte";} ?>
             <?php if ($lang == "uk") {echo "Контакти";} ?>
+            <?php if ($lang == "ro") {echo "Contacte";} ?>
         </li></a>
         <a href="index.php?route=information/information&amp;information_id=7"><li>
             <?php if ($lang == "en") {echo "Articles";} ?>
             <?php if ($lang == "ru") {echo "Статьи";} ?>
             <?php if ($lang == "de") {echo "Artikel";} ?>
             <?php if ($lang == "uk") {echo "Статті";} ?>
+            <?php if ($lang == "ro") {echo "Articole";} ?>
         </li></a>
         <a href="index.php?route=information/information&amp;information_id=9"><li>
             <?php if ($lang == "en") {echo "Partners";} ?>
             <?php if ($lang == "ru") {echo "Партнерам";} ?>
             <?php if ($lang == "de") {echo "Partner";} ?>
             <?php if ($lang == "uk") {echo "Партнерам";} ?>
+            <?php if ($lang == "ro") {echo "Parteneri";} ?>
         </li></a>
         
 <!--

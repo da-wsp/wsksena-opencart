@@ -231,36 +231,42 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
                         <?php if ($lang == "ru") {echo "Главная";} ?>
                         <?php if ($lang == "de") {echo "Startseite";} ?>
                         <?php if ($lang == "uk") {echo "Головна";} ?>
-                    </a></li>
-                    <li><a href="index.php?route=information/information&amp;information_id=4">
-                        <?php if ($lang == "en") {echo "About us";} ?>
-                        <?php if ($lang == "ru") {echo "О нас";} ?>
-                        <?php if ($lang == "de") {echo "Uber uns";} ?>
-                        <?php if ($lang == "uk") {echo "Про нас";} ?>
-                    </a></li>
-                    <li><a href="index.php?route=information/contact">
-                        <?php if ($lang == "en") {echo "Contacts";} ?>
-                        <?php if ($lang == "ru") {echo "Контакты";} ?>
-                        <?php if ($lang == "de") {echo "Kontakte";} ?>
-                        <?php if ($lang == "uk") {echo "Контакти";} ?>
-                    </a></li>
-                    <li><a href="index.php?route=information/information&amp;information_id=7">
-                        <?php if ($lang == "en") {echo "Articles";} ?>
-                        <?php if ($lang == "ru") {echo "Статьи";} ?>
-                        <?php if ($lang == "de") {echo "Artikel";} ?>
-                        <?php if ($lang == "uk") {echo "Статті";} ?>
-                    </a></li>
-                    <li><a href="index.php?route=information/information&amp;information_id=9">
-                        <?php if ($lang == "en") {echo "Partners";} ?>
-                        <?php if ($lang == "ru") {echo "Партнерам";} ?>
-                        <?php if ($lang == "de") {echo "Partner";} ?>
-                        <?php if ($lang == "uk") {echo "Партнерам";} ?>
+                        <?php if ($lang == "ro") {echo "Principal";} ?>
                     </a></li>
                     <li><a href="index.php?route=product/category&path=59">
                         <?php if ($lang == "en") {echo "Collection";} ?>
                         <?php if ($lang == "ru") {echo "Коллекция";} ?>
                         <?php if ($lang == "de") {echo "Sammlung";} ?>
                         <?php if ($lang == "uk") {echo "Колекція";} ?>
+                        <?php if ($lang == "ro") {echo "Colectie";} ?>
+                    </a></li>
+                    <li><a href="index.php?route=information/information&amp;information_id=4">
+                        <?php if ($lang == "en") {echo "About us";} ?>
+                        <?php if ($lang == "ru") {echo "О нас";} ?>
+                        <?php if ($lang == "de") {echo "Uber uns";} ?>
+                        <?php if ($lang == "uk") {echo "Про нас";} ?>
+                        <?php if ($lang == "ro") {echo "Despre noi";} ?>
+                    </a></li>
+                    <li><a href="index.php?route=information/contact">
+                        <?php if ($lang == "en") {echo "Contacts";} ?>
+                        <?php if ($lang == "ru") {echo "Контакты";} ?>
+                        <?php if ($lang == "de") {echo "Kontakte";} ?>
+                        <?php if ($lang == "uk") {echo "Контакти";} ?>
+                        <?php if ($lang == "ro") {echo "Contacte";} ?>
+                    </a></li>
+                    <li><a href="index.php?route=information/information&amp;information_id=7">
+                        <?php if ($lang == "en") {echo "Articles";} ?>
+                        <?php if ($lang == "ru") {echo "Статьи";} ?>
+                        <?php if ($lang == "de") {echo "Artikel";} ?>
+                        <?php if ($lang == "uk") {echo "Статті";} ?>
+                        <?php if ($lang == "ro") {echo "Articole";} ?>
+                    </a></li>
+                    <li><a href="index.php?route=information/information&amp;information_id=9">
+                        <?php if ($lang == "en") {echo "Partners";} ?>
+                        <?php if ($lang == "ru") {echo "Партнерам";} ?>
+                        <?php if ($lang == "de") {echo "Partner";} ?>
+                        <?php if ($lang == "uk") {echo "Партнерам";} ?>
+                        <?php if ($lang == "ro") {echo "Parteneri";} ?>
                     </a></li>
                 </ul>
             </nav>
