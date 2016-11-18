@@ -11,6 +11,7 @@
  <div style="padding: 40px 40px 60px 40px; background-color: rgba(255, 255, 255, 0.7);">
 <!--  <h1><?php echo $heading_title; ?></h1>-->
 
+
 <!-- <div class="line"></div>-->
  
 <div class="product-info">
@@ -149,22 +150,19 @@ jQuery(function(){
 -->
 
     <div style="float: left;">
-            <div class="wp-caption alignleft">
-                <img class="zoomed-image" src="<?php echo $image['thumb']; ?>" data-large="<?php echo $image['thumb']; ?>" width="400" style="visibility: visible; display: inline;">
-            </div>
-            <div class="tmb-caption">
-                <?php if ($images) { ?>
-                    <?php foreach ($images as $image) { ?>
-                    <div class="wp-caption alignleft" style="display: inline-block; margin-top: 3px;">
-                        <img class="small-image" src="<?php echo $image['thumb']; ?>" data-tmb-large="<?php echo $image['thumb']; ?>" width="98">
-                    </div>
-                    <?php } ?>
+        <div class="wp-caption alignleft">
+            <img class="zoomed-image" src="<?php echo $image['thumb']; ?>" data-large="<?php echo $image['thumb']; ?>" width="400" style="visibility: visible; display: inline;">
+        </div>
+        <div class="tmb-caption">
+            <?php if ($images) { ?>
+                <?php foreach ($images as $image) { ?>
+                <div class="wp-caption alignleft" style="display: inline-block; margin-top: 3px;">
+                    <img class="small-image" src="<?php echo $image['thumb']; ?>" data-tmb-large="<?php echo $image['thumb']; ?>" width="98">
+                </div>
                 <?php } ?>
-                
-                
-                
-            </div>
-            <div class="clear" style="clear: both;"></div>
+            <?php } ?>
+        </div>
+        <div class="clear" style="clear: both;"></div>
             
 <div style="margin-top: 30px;">
       <?php if ($price) { ?>
@@ -175,9 +173,11 @@ jQuery(function(){
         <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
         <?php } ?>
         <br />
+<!--
         <?php if ($tax) { ?>
         <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
         <?php } ?>
+-->
         <?php if ($points) { ?>
         <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
         <?php } ?>
@@ -403,15 +403,50 @@ jQuery(function(){
 <div class="right1" width="500" style="overflow: hidden; padding-left: 20px;">
      
     <div class="description" style="text-align: center;">
+       
+        <?php if ($prev_text) { ?>
+            <a href="<?php echo $prev_url; ?>">
+            <span>
+<!--            <?php echo $prev_text;  ?>-->
+                <img style="width: 20px; margin-right: 10px;" src="image/button-prev-2.png" />
+            </span>
+            </a>
+        <?php } ?>
+        
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
-        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
+        <span><?php echo $text_model; ?></span> <?php echo $model; ?>
+        
+        <?php if ($next_text) { ?>
+            <a href="<?php echo $next_url; ?>">
+            <span>
+<!--                <?php echo $next_text;?>-->
+                <img style="width: 20px; margin-left: 10px;" src="image/button-next-2.png" />
+            </span>
+            </a>
+        <?php } ?><br />
+        
         <?php if ($reward) { ?>
         <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
         <?php } ?>
         <span><?php echo $text_stock; ?></span> <?php echo $stock; ?>
         <div class="line"></div>
+<!--
+<div>
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr>
+  <?php if ($prev_text) { ?>
+      <td align=left><a href="<?php echo $prev_url; ?>" class="button"><span><?php echo $prev_text;  ?></span></a></td>
+  <?php } ?>
+  <?php if ($next_text) { ?>
+    <td align=right><a href="<?php echo $next_url; ?>" class="button"><span><?php echo $next_text;?></span></a></td>
+  <?php } ?>
+    </tr>
+  </table>
+</div>
+-->
+
     </div>
         
      

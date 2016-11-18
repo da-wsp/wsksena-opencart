@@ -280,6 +280,10 @@
 	  	max-width: 412px;
 		max-height: 230px;
 	}
+    .lantern-left,
+	.lantern-right{
+		width: 50px;
+	}
     
     .big-map {display: none; width: 100%;}
     .medium-map {display: block; width: 100%;}
@@ -669,6 +673,9 @@
 	.languages {
   		top: -215px;
 	}
+    .product-info .description span {
+    font-size: 10pt;
+}
 }
 
 /* Custom, iPhone Retina */

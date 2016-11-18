@@ -125,7 +125,7 @@ $(document).ready(function() {
         .jssora05l.jssora05lds { background-position: -10px -40px; opacity: .3; pointer-events: none; }
         .jssora05r.jssora05rds { background-position: -70px -40px; opacity: .3; pointer-events: none; }
     </style>
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 400px; overflow: hidden; visibility: hidden;">
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 600px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
 <!--
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -133,7 +133,7 @@ $(document).ready(function() {
             <div style="position:absolute;display:block;background:url('catalog/view/javascript/jquery/banner-rotator/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
 -->
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 400px; overflow: hidden;">
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 600px; overflow: hidden;">
           
             <?php foreach ($banners as $banner) { ?>
             <div data-p="112.50">

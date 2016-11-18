@@ -199,6 +199,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
             <a href="https://twitter.com/svadebnye_platy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="http://ok.ru/group/53866473718005" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/groups/181404582218858/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://vk.com/svadebnye_platya1" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
         </div><!-- end soc-list -->
         <?php echo $language; ?>
     </div>
@@ -322,6 +323,9 @@ $(".menu-button").on('click', function(e) {
     
 <?php } ?>
 <div id="notification"></div>
+
+<img src="image/lantern.png" alt="Ksena" class="lantern-left">
+<img src="image/lantern.png" alt="Ksena" class="lantern-right">
 
 <!--////////////////////////////////////////////////
                     OPENCART MENU                       

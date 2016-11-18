@@ -231,6 +231,25 @@ class ControllerProductProduct extends Controller {
 
 			$this->data['heading_title'] = $product_info['name'];
 
+            $rsNext 	= $this->model_catalog_product->getProduct($product_id+1);
+			$rsLast 	= $this->model_catalog_product->getProduct($product_id-1);
+
+				if($rsNext):
+					$this->data['next_url'] = $this->url->link('product/product', 'product_id=' .  $rsNext['product_id']);
+					$this->data['next_text']= $rsNext['name']." &gt;&gt;";
+				else:
+					$this->data['next_url'] = '';
+					$this->data['next_text']= '';
+				endif;
+
+				if($rsLast):
+					$this->data['prev_url'] = $this->url->link('product/product', 'product_id=' .  $rsLast['product_id']);
+					$this->data['prev_text']= "&lt;&lt; ".$rsLast['name'];
+				else:
+					$this->data['prev_url'] = '';
+					$this->data['prev_text']= null;
+				endif;
+            
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');

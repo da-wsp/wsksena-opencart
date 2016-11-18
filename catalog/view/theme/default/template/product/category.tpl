@@ -93,7 +93,7 @@
 		<div class="front">
 			<!-- front content -->
 			<a href="<?php echo $product['href']; ?>">
-			<img style="position: absolute; top: -17px; transform: scale(1, 1);" src="image/frame.png" />
+			<img style="position: absolute; transform: scale(1, 1);" src="image/frame.png" />
 			<img src="<?php echo $product['thumb']; ?>" />
 <!--			<img style="position: absolute; top: 276px; transform: scale(1, -1);" src="image/frame.png" />-->
 			</a>
@@ -101,7 +101,7 @@
 		<div class="back">
 			<!-- back content -->
 			<a href="<?php echo $product['href']; ?>">
-			<img style="position: absolute; top: -17px; transform: scale(1, 1);" src="image/frame.png" />
+			<img style="position: absolute; transform: scale(1, 1);" src="image/frame.png" />
 			<img src="<?php echo str_replace('.jpg', '-back.jpg', $product['thumb']);?>" />
 <!--			<img style="position: absolute; top: 276px; transform: scale(1, -1);" src="image/frame.png" />-->
 			</a>
